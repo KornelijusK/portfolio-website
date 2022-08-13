@@ -1,0 +1,360 @@
+body {
+    display: grid;
+    grid-template-areas: 
+    "navbar"
+    "topbar"
+    "content"
+    "footer";   
+    grid-template-columns: auto; 
+    grid-template-rows: auto auto auto auto;
+    background-color: #222222;   
+    color: #aaa;   
+    font-family:'Quicksand';
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+}
+
+header {
+    grid-area: navbar;
+}
+
+.topbar {
+    grid-area: topbar;
+    padding: 25px 50px;
+    border-bottom: 2px solid #333;
+    text-align: center;
+    background-color: #252525; 
+}
+
+.topbar img {
+    background-color: transparent;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.content {
+    grid-area: content;        
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 1.2rem;   
+    padding: 0 10px;  
+    font-weight: 500;  
+}
+
+nav {    
+    margin: auto;
+    display: flex;    
+    justify-content: flex-end;   
+    padding: 25px;
+    border-bottom: 2px solid #333;    
+}
+
+p.name {   
+    font-weight: 300;
+    font-size: 3rem;
+    margin: 25px 0px;    
+}
+
+p.role {    
+    font-weight: 900;
+    font-size: 1.5rem;
+    margin: 25px 0px 0px 0px;
+}
+
+section {
+    padding: 0px 25px;
+}
+
+.about-me {     
+    text-align: justify;        
+}
+
+h1 {
+    display: inline-block;
+    position: relative;
+    font-size: 1.5rem;
+    font-weight: 500;  
+    margin: 0px;
+    padding: 25px 0px 7px 0px;
+    text-align: left;
+}
+
+h1:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0%;
+    border-bottom: 2px solid rgb(94, 54, 167);
+}
+
+h1:after{
+    content: "";
+    position: absolute;
+    width: 66%;
+    height: 1px;
+    bottom: 0;
+    left: 34%;
+    border-bottom: 2px solid #aaa;
+}
+
+.filler {
+    padding-top: 35px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+
+.hobbies {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.description {
+    text-align: justify;
+}
+
+.activities {
+    width: 25%;
+    height: auto;    
+    border-radius: 15px;    
+}
+
+.fa-solid {
+    font-size: 40px;
+    padding-top: 15px 
+}
+
+.hobbies {    
+    border-bottom: 2px solid #333;
+    padding-bottom: 25px;
+    padding-top: 0px;
+}
+
+.activity-title {
+    font-size: 1.7rem;    
+    margin: 0px;
+    padding: 15px 0px;
+}
+
+table {    
+    width: 100%;
+    text-align: center;    
+    padding-top: 25px;
+    font-weight: 300;    
+}
+
+.hobbie-description, .job-description {
+    text-align: justify;
+}
+
+th, td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.experience-description td:nth-child(2) {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.experience {
+    border-bottom: 2px solid #333;
+    padding-bottom: 25px;
+}
+
+.company-title {
+    font-size: 1.7rem;              
+}
+
+.skill-list {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.skill {
+    position: relative;
+    height: 17px;
+    margin: 8px 0px;
+    width: 100%;
+    font-size: 0.8rem;
+    border: 1px solid #333;
+    border-radius: 15px;
+}
+
+.html {
+    animation: loadHtml 3s normal forwards;   
+    background-color: #252525; 
+    height: 17px;
+    width: 0;
+    padding: 2px 0px 2px 10px;
+  }
+  
+@keyframes loadHtml{
+    0% { width: 0; }
+    100% { width: 70%; }
+  }
+
+.html span {
+    position: absolute;
+    left: 97%;
+}
+
+.css {
+    animation: loadCss 3s normal forwards;   
+    background-color: #252525; 
+    height: 17px;
+    width: 0;
+    padding: 2px 0px 2px 10px;
+  }
+  
+@keyframes loadCss {
+    0% { width: 0; }
+    100% { width: 80%; }
+  }
+
+.css span {
+    position: absolute;
+    left: 97%;
+}
+
+.js {
+    animation: loadJs 3s normal forwards;   
+    background-color: #252525; 
+    height: 17px;
+    width: 0;
+    padding: 2px 0px 2px 10px;
+  }
+  
+@keyframes loadJs {
+    0% { width: 0; }
+    100% { width: 50%; }
+  }
+
+.js span {
+    position: absolute;
+    left: 95%;
+}
+
+.python {
+    animation: loadPython 3s normal forwards;   
+    background-color: #252525; 
+    height: 17px;
+    width: 0;
+    padding: 2px 0px 2px 10px;
+  }
+  
+@keyframes loadPython {
+    0% { width: 0; }
+    100% { width: 60%; }
+  }
+
+.python span {
+    position: absolute;
+    left: 96%;    
+}
+
+.skill .python span {
+    color: white!important;
+}
+
+.skills {    
+    border-bottom: 2px solid #333;
+    padding-bottom: 25px;
+}
+
+.portfolio-items {
+    height: 200px;
+    background-color: #252525;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.portfolio table td:nth-child(2) {
+    padding: 0 5px;
+}
+
+.portfolio table {
+    padding-bottom: 25px;
+    border-bottom: 2px solid #333;
+}
+
+.portfolio table th {
+    padding-bottom: 0px;   
+}
+
+.portfolio table td {
+    padding-top: 5px;   
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer a {
+    padding-right: 15px;
+    text-decoration: none;
+    color: #aaa;
+    font-size: 0.8rem;   
+    font-weight: 500;
+}
+
+.footer p {
+    padding-left: 15px;
+    color: #aaa;
+    font-size: 0.8rem;   
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 768px) {
+
+    nav {    
+        justify-content: center;              
+    }
+
+    .hobbies table {
+        padding-top: 0px;
+    }
+
+    .html span {
+        position: absolute;
+        left: 90%;
+    }
+           
+    .css span {
+        position: absolute;
+        left: 91%;
+    }       
+    
+    .js span {
+        position: absolute;
+        left: 88%;
+    }
+
+    .python span {
+        position: absolute;
+        left: 88%;
+    }
+
+    .portfolio table th {
+        font-size: 0.8rem;   
+    } 
+
+    .portfolio table td:nth-child(2) {
+        padding: 0 5px;
+    }
+}

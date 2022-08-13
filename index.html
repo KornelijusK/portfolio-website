@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Portfolio Site</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#">About Me</a>
+        <a href="#">Experience</a>
+        <a href="#">Skills</a>
+        <a href="#">Portfolio</a>
+      </nav>
+    </header>
+    <main>
+      <section class="topbar">
+        <img src="./profile-picture.png" alt="profile-picture" />
+        <p class="name">Kornelijus Klinga</p>
+        <p class="role">Full-stack Developer</p>
+      </section>
+
+      <section class="content">
+        <div class="about-me">
+          <h1>ABOUT ME</h1>
+          <p class="filler">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
+            officiis commodi non, deserunt obcaecati numquam ab minus
+            consequuntur, quibusdam dignissimos illo, maiores officia quas ipsa
+            assumenda tempora id nulla totam vero culpa? Iure consequatur quis,
+            dignissimos odio eligendi sunt, saepe, eum recusandae nihil eius
+            itaque? Voluptatibus fuga ad aliquam ducimus.
+          </p>
+        </div>
+
+        <div class="hobbies">
+          <table>
+            <tr>
+              <th colspan="2"><i class="fa-solid fa-person-hiking"></i></th>
+              <th colspan="2"><i class="fa-solid fa-person-biking"></i></th>
+              <th colspan="2"><i class="fa-solid fa-gamepad"></i></th>
+            </tr>
+            <tr>
+              <td colspan="2" class="activity-title">Hiking</td>
+              <td colspan="2" class="activity-title">Cycling</td>
+              <td colspan="2" class="activity-title">Gaming</td>
+            </tr>
+            <tr class="experience-description">
+              <td colspan="2" class="hobbie-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet rerum maxime eos ratione dolore doloremque natus
+                aspernatur omnis, ullam tempora.
+              </td>
+              <td colspan="2" class="hobbie-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet rerum maxime eos ratione dolore doloremque natus
+                aspernatur omnis, ullam tempora.
+              </td>
+              <td colspan="2" class="hobbie-description">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Eveniet rerum maxime eos ratione dolore doloremque natus
+                aspernatur omnis, ullam tempora.
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="experience">
+          <h1>EXPERIENCE</h1>
+          <table>
+            <tr>
+              <th colspan="2">2015-2017</th>
+              <th colspan="2">2017-2019</th>
+              <th colspan="2">2019-Present</th>
+            </tr>
+            <tr>
+              <td colspan="2" class="company-title">Microsoft</td>
+              <td colspan="2" class="company-title">Google</td>
+              <td colspan="2" class="company-title">Freelancer</td>
+            </tr>
+            <tr class="experience-description">
+              <td colspan="2" class="job-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                soluta facere atque corrupti necessitatibus. Delectus? soluta
+                facere atque corrupti necessitatibus. Delectus? soluta facere
+                atque corrupti necessitatibus. Delectus?
+              </td>
+              <td colspan="2" class="job-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                soluta facere atque corrupti necessitatibus. Delectus? soluta
+                facere atque corrupti necessitatibus. Delectus? soluta facere
+                atque corrupti necessitatibus. Delectus?
+              </td>
+              <td colspan="2" class="job-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+                soluta facere atque corrupti necessitatibus. Delectus? soluta
+                facere atque corrupti necessitatibus. Delectus? soluta facere
+                atque corrupti necessitatibus. Delectus?
+              </td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="skills">
+          <h1>SKILLS</h1>
+          <div class="skill-list">
+            <div class="skill html">HTML<span>70%</span></div>
+            <div class="skill css">CSS<span>80%</span></div>
+            <div class="skill js">JAVASCRIPT<span>50%</span></div>
+            <div class="skill python">PYTHON<span>60%</span></div>
+          </div>
+        </div>
+
+        <div class="portfolio">
+          <h1>PORTFOLIO</h1>
+
+          <table>
+            <tr>
+              <th>PORTFOLIO ITEM 1</th>
+              <th>PORTFOLIO ITEM 2</th>
+              <th>PORTFOLIO ITEM 3</th>
+            </tr>
+
+            <tr>
+              <td><div class="portfolio-items"></div></td>
+              <td><div class="portfolio-items"></div></td>
+              <td><div class="portfolio-items"></div></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <a href="mailto:kornelijusklinga@gmail.com">Message Me!</a>
+        <p>Copyright © 2022 All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
