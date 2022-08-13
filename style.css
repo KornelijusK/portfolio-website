@@ -320,6 +320,11 @@ th, td {
     font-weight: 500;
 }
 
+.portfolio-item-title {
+    font-size: 1.7rem;  
+    font-weight: 300;           
+}
+
 @media only screen and (max-width: 768px) {
 
     nav {    
@@ -350,11 +355,12 @@ th, td {
         left: 88%;
     }
 
-    .portfolio table th {
-        font-size: 0.8rem;   
+    .portfolio-item-title {
+        font-size: 1.2rem;   
     } 
 
     .portfolio table td:nth-child(2) {
         padding: 0 5px;
     }
 }
+
